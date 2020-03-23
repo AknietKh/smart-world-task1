@@ -26,9 +26,7 @@ a {
 
 .main-content {
   position: relative;
-  max-width: 192rem;
-  width: 192rem;
-  font-family: Quicksand;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.7rem;
@@ -44,7 +42,6 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 104.3rem;
   background-color: $bgcolor-1;
@@ -54,17 +51,21 @@ a {
 
 .content-align {
   width: 114rem;
-  height: 100%;
   margin: 0 auto;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
   width: 16.5rem;
   height: 5rem;
   border-radius: 25px;
   border: 2px solid $blue-primary;
   color: $blue-primary;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
+  line-height: 2.7rem;
   background-color: transparent;
   cursor: pointer;
 
@@ -96,11 +97,12 @@ a {
   position: relative;
   color: $blue-primary;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
 
   &_white {
     font-weight: 700;
     color: #ffffff;
+    margin-right: 3rem;
   }
 
   &__arrow {
@@ -139,14 +141,21 @@ a {
     }
 
     &_white {
-      top: 50%;
+      top: 53%;
+      right: -3.2rem;
+      width: 1.9rem;
+      height: 1.5px;
       background-color: #fff;
 
       &:before {
+        width: 1rem;
+        height: 1.5px;
         background-color: #fff;
       }
 
       &:after {
+        width: 1rem;
+        height: 1.5px;
         background-color: #fff;
       }
     }
@@ -165,7 +174,6 @@ a {
   width: 73.1rem;
   height: 12.6rem;
   text-align: center;
-  margin-top: 12rem;
 
   &-background {
     position: absolute;
@@ -190,11 +198,15 @@ a {
 
   h2 {
     font-size: 3.2rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 3.6rem;
     color: $header-color;
     margin-top: 2.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    width: 101%;
   }
 
 }
@@ -238,11 +250,12 @@ a {
 
 .scroll {
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.2rem;
   right: 15rem;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #fff;
+  border-radius: 3px;
   
   a {
     display: flex;
@@ -273,43 +286,42 @@ a {
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+ 
   &-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 164rem;
-    width: 85%;
+    width: 164rem;
     height: 10rem;
 
     .logo {
-      max-width: 17.9rem;
-      width: 17.6rem;
-      max-height: 10rem;
-      height: 100%;
+      box-sizing: border-box;
+      width: 17.9rem;
+      height: 10rem;
       border-radius: 0 0 22px 22px;
       background-color: $blue-primary;
-      font-size: 3.6rem;
-      font-weight: 700;
-      line-height: 10rem;
-      color: #feffff;
       text-align: center;
+      padding-top: 3.2rem;
+
+      &__text {
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        color: #feffff;
+        
+      }
     }
 
     .menu {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 35.3rem;
 
       &-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        max-width: 57.1rem;
-        width: 57.1rem;
+        align-items: baseline;;
+        width: 57.3rem;
         text-transform: uppercase;
       }
 
@@ -327,9 +339,9 @@ a {
   }
 
   &-content {
-    margin-top: 10rem;
-    width: 62rem;
-    height: 61.1rem;
+    margin-top: 10.6rem;
+    width: 61.1rem;
+    height: 22.3rem;
     text-align: center;
 
     h2 {
@@ -340,11 +352,17 @@ a {
     }
 
     p {
-      margin: 2rem 0 2rem;
+      margin: 3.2rem 0 3.7rem;
       color: $text-color;
       line-height: 27px;  
     }
     
+    .btn-wrapper {
+      display: flex;
+      width: 36rem;
+      margin: 0 auto;
+    }
+
     button:first-child {
       margin-right: 3rem;
     }
@@ -357,29 +375,28 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 53rem;
+    height: 53.5rem;
     display: flex;
     width: 90rem;
     margin-top: 8rem;
   }
   
-  width: 33.8rem;
-  height: 44rem;
+  width: 35.8rem;
+  height: 49.6rem;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 50% 5%;
-  background-size: 109% 120%;
+  background-size: cover;
   
   &-left {
     background-image: url(../../assets/img/device-small.png);
     position: absolute;
     bottom: 0;
-    left: 3%;
+    left: -0.6rem;
   }
 
   &-center {
-    width: 34.5rem;
-    height: 100%;
+    width: 44.5rem;
+    height: 109%;
     z-index: 2;
     background-image: url(../../assets/img/device.png);
   }
@@ -388,15 +405,15 @@ a {
     background-image: url(../../assets/img/device-small.png);
     position: absolute;
     bottom: 0;
-    right: 3%;
+    right: -0.6rem;
   }
 
   &-screen {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: 50% -86%;
-    background-size: 69%;
+    background-position: 50% 6rem;
+    background-size: 65%;
     
 
     &-left {
@@ -405,8 +422,8 @@ a {
 
     &-center {
       background-image: url(../../assets/img/Place_Your_screen-center.png);
-      background-position: 50% -17%;
-      background-size: 75%;
+      
+      background-size: 69%;
     }
 
     &-right {
@@ -416,7 +433,7 @@ a {
 }
 
 .features {
-  height: 63.5rem;
+  height: 63rem;
   background-color: $bgcolor-1;
   border: solid transparent;
 
@@ -444,7 +461,7 @@ a {
       width: 7rem;
       height: 7rem;
       margin-top: 4rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       border-radius: 50%;
       background-size: 45%;
       background-repeat: no-repeat;
@@ -468,8 +485,8 @@ a {
     }
 
     &_header {
-      margin-bottom: 2.5rem;
-      font-weight: 500;
+      margin-bottom: 1.8rem;
+      font-weight: 600;
       font-size: 1.8rem;
       color: $header-color;
       line-height: 2.7rem;
@@ -491,7 +508,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 162.9rem;
+    width: 112.9rem;
     height: 93rem;
     margin-left: 39rem;
     margin-right: 40.1rem;
@@ -500,7 +517,7 @@ a {
   .article-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 105rem;
     height: 40rem;
 
@@ -511,6 +528,7 @@ a {
     &_left {
       flex-direction: row-reverse;
       align-self: flex-start;
+      width: 106.3rem;
     }
   }
 
@@ -535,20 +553,20 @@ a {
     &_background {
       position: absolute;
       z-index: -1;
-      width: 49rem;
-      height: 42rem;
+      width: 48rem;
+      height: 42.5rem;
       background-color: $blue-primary;
       transform: rotate(50deg);
       border-radius: 10%;
 
       &_top {
-        top: -9%;
-        left: -27%;
+        top: -10%;
+        left: -33%;
       }
 
       &_bottom {
-        bottom: -8%;
-        right: -37%;
+        bottom: -9%;
+        right: -32%;
       }
     }
   }
@@ -559,20 +577,23 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     width: 54.4rem;
-    height: 20.8rem;
+    height: 22.4rem;
+    margin-top: 8.6rem;
 
-    header {
+    h2 {
       color: $header-color;
       font-size: 3.2rem;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 3.6rem;
     }
   }
 }
 
 .instruction {
+  box-sizing: border-box;
   height: 64.6rem;
   background-color: $bgcolor-1;
+  padding-top: 12.5rem;
 
   &-wrapper {
     display: flex;
@@ -587,7 +608,7 @@ a {
       z-index: 0;
       display: flex;
       justify-content: space-between;
-      margin-top: 4.7rem;
+      margin-top: 5rem;
       width: 107.6rem;
       height: 25.6rem;
     }
@@ -598,9 +619,13 @@ a {
     &_header {
       margin-bottom: 1.5rem;
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 2.7rem;
       color: $header-color;
+    }
+
+    p {
+      width: 101%;
     }
 
     &-icon {
@@ -609,7 +634,7 @@ a {
       background-color: $blue-light;
       margin: 0 auto;
       border-radius: 50%;
-      margin-bottom: 3.1rem;
+      margin-bottom: 2.6rem;
       background-size: 45%;
       background-repeat: no-repeat;
       background-position: center;
@@ -641,7 +666,9 @@ a {
 }
 
 .pricing {
+  box-sizing: border-box;
   height: 83.6rem;
+  padding-top: 13rem;
 
   &-wrapper {
     display: flex;
@@ -655,27 +682,30 @@ a {
   &-plan {
     width: 33.1rem;
     height: 26.6rem;
-    margin-right: 6.9rem;
+    margin-right: 5.9rem;
 
     h2 {
       font-size: 3.2rem;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 3.6rem;
       color: $header-color;
-      margin-bottom: 3.3rem;
+      margin-bottom: 3rem;
     }
 
     &__btn-wrapper {
       display: flex;
-      margin-top: 3.7rem;
+      margin-top: 3.4rem;
     }
 
     &__btn-left {
       border-radius : 25px 0 0 25px;
+      border-right: none;
+      width: 16.7rem;
     }
 
     &__btn-right {
       border-radius : 0 25px 25px 0;
+      border-left: none;
     }
   }
 
@@ -695,8 +725,8 @@ a {
         position: relative;
         width: 10rem;
         height: 10rem;
-        margin-top: 3rem;
-        margin-bottom: 1.9rem;
+        margin-top: 4rem;
+        margin-bottom: 2.2rem;
       }
 
       position: absolute;
@@ -707,7 +737,7 @@ a {
 
       &-img {
         position: absolute;
-        top: 25%;
+        top: 24%;
         left: 25%;
         width: 5.5rem;
         height: 5.5rem;
@@ -729,9 +759,9 @@ a {
 
     h2 {
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       color: $header-color;
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
 
     &__horizontal {
@@ -742,16 +772,16 @@ a {
     }
 
     &__service {
-      height: 15.4rem;
+      height: 16.6rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 2.7rem;
+      margin-bottom: 1.7rem;
     }
 
     .price {
-      margin-bottom: 2.4rem;
+      margin-bottom: 2.6rem;
       font-size: 3.2rem;
       font-weight: 500;
       line-height: 3.6rem;
@@ -767,7 +797,6 @@ a {
 
 .testimonials {
   display: flex;
-  align-items: center;
   height: 60.8rem;
   background-color: $bgcolor-1;
 
@@ -779,13 +808,14 @@ a {
   &-wrapper {
     width: 103.9rem;
     height: 37.8rem;
+    margin-top: 12.5rem;
     margin-left: 12.7rem;
     overflow: hidden;
   }
 
   &__header {
     font-size: 3.2rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 3.6rem;
     color: $header-color;
     margin-bottom: 4.4rem;
@@ -818,7 +848,7 @@ a {
 
     &__header {
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       color: $header-color;
     }
 
@@ -828,7 +858,7 @@ a {
     }
 
     p {
-      margin-top: 1.9rem;
+      margin-top: 1.5rem;
     }
   }
 
@@ -857,6 +887,8 @@ a {
 }
 
 .lastest-news {
+  box-sizing: border-box;
+  padding-top: 12.5rem;
   height: 96rem;
 
   &__wrapper {
@@ -887,7 +919,6 @@ a {
   &_big {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
   }
 
@@ -905,12 +936,14 @@ a {
 
   &__header {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.8rem;
     color: $header-color;
 
     &_big {
+      margin-top: 3rem;
       font-size: 2.4rem;
+      font-weight: 600;
       line-height: 3.6rem;
       color: $blue-primary;
     }
@@ -924,12 +957,18 @@ a {
   }
 
   &__main-content {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   
+  &__text-wrapper {
+    margin-top: -0.7rem;
+  }
 }
 
 .free-trial  {
+  box-sizing: border-box;
+  padding-top: 12.5rem;
   height: 33.6rem;
   background-color: $bgcolor-1;
 
@@ -940,14 +979,14 @@ a {
   }
 
   .text-content {
-    margin-right: 16.2rem;
+    margin-right: 16.5rem;
 
     h2 {
       font-size: 3.2rem;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 3.6rem;
       color: $header-color;
-      margin-bottom: 2.4rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -968,23 +1007,23 @@ a {
       line-height: 2.4rem;
       color: #fff;
       margin-top: 13rem;
-      margin-bottom: 4rem;
+      margin-bottom: 4.1rem;
     }
   }
 
   .subscribe {
     display: flex;
     align-items: center;
-    width: 55.5rem;
+    width: 56rem;
     height: 6rem;
     margin-bottom: 13rem;
   
     &__email {
       flex-grow: 1;
-      height: 5rem;
+      height: 5.6rem;
       border: 2px solid #fff;
       border-right: none;
-      border-radius: 25px 0 0 25px;
+      border-radius: 50px 0 0 50px;
       background-color: transparent;
       padding: 0 5%;
       font-size: 1.6rem;
@@ -1002,9 +1041,9 @@ a {
     }
   
     &__btn {
-      width: 16.5rem;
-      height: 6rem;
-      border-radius: 0 25px 25px 0;
+      width: 16.8rem;
+      height: 6.5rem;
+      border-radius: 0 50px 50px 0;
       border-left: none;
       background-color: #fff;
       color: $blue-primary;
@@ -1017,7 +1056,7 @@ a {
 
   .horiazontal-line {
     position: absolute;
-    bottom: 10.5rem;
+    bottom: 9.5rem;
     width: 192rem;
     background-color: #fff;
   }
@@ -1025,6 +1064,7 @@ a {
   .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3.6rem;
     width: 100%;
 
@@ -1084,11 +1124,17 @@ a {
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 2560px) {
   html {
-    font-size: 7px;
+    font-size: 13.3px;
   }
 }
+
+// @media (max-width: 1280px) {
+//   html {
+//     font-size: 7px;
+//   }
+// }
 
 // @media (max-width: 1024px) {
 //   html {

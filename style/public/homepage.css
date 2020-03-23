@@ -14,9 +14,7 @@ a:active {
 
 .main-content {
   position: relative;
-  max-width: 192rem;
-  width: 192rem;
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.7rem;
@@ -32,7 +30,6 @@ a:active {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 104.3rem;
   background-color: #f5fcfd;
@@ -42,17 +39,21 @@ a:active {
 
 .content-align {
   width: 114rem;
-  height: 100%;
   margin: 0 auto;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
   width: 16.5rem;
   height: 5rem;
   border-radius: 25px;
   border: 2px solid #0f7bff;
   color: #0f7bff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
+  line-height: 2.7rem;
   background-color: transparent;
   cursor: pointer;
 }
@@ -80,11 +81,12 @@ a:active {
   position: relative;
   color: #0f7bff;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .link_white {
   font-weight: 700;
   color: #ffffff;
+  margin-right: 3rem;
 }
 .link__arrow {
   display: block;
@@ -120,13 +122,20 @@ a:active {
   transform-origin: 100% 0%;
 }
 .link__arrow_white {
-  top: 50%;
+  top: 53%;
+  right: -3.2rem;
+  width: 1.9rem;
+  height: 1.5px;
   background-color: #fff;
 }
 .link__arrow_white:before {
+  width: 1rem;
+  height: 1.5px;
   background-color: #fff;
 }
 .link__arrow_white:after {
+  width: 1rem;
+  height: 1.5px;
   background-color: #fff;
 }
 .link__arrow a:hover .arrow1,
@@ -141,7 +150,6 @@ a:active {
   width: 73.1rem;
   height: 12.6rem;
   text-align: center;
-  margin-top: 12rem;
 }
 .section-title-background {
   position: absolute;
@@ -163,11 +171,14 @@ a:active {
 }
 .section-title h2 {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.6rem;
   color: #333333;
   margin-top: 2.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+.section-title p {
+  width: 101%;
 }
 
 .next-section-btn {
@@ -206,11 +217,12 @@ a:active {
 
 .scroll {
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.2rem;
   right: 15rem;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #fff;
+  border-radius: 3px;
 }
 .scroll a {
   display: flex;
@@ -237,43 +249,38 @@ a:active {
   -webkit-transform: rotate(225deg);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 164rem;
-  width: 85%;
+  width: 164rem;
   height: 10rem;
 }
 .header-top .logo {
-  max-width: 17.9rem;
-  width: 17.6rem;
-  max-height: 10rem;
-  height: 100%;
+  box-sizing: border-box;
+  width: 17.9rem;
+  height: 10rem;
   border-radius: 0 0 22px 22px;
   background-color: #0f7bff;
+  text-align: center;
+  padding-top: 3.2rem;
+}
+.header-top .logo__text {
   font-size: 3.6rem;
   font-weight: 700;
-  line-height: 10rem;
+  line-height: 2.4rem;
   color: #feffff;
-  text-align: center;
 }
 .header-top .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 35.3rem;
 }
 .header-top .menu-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 57.1rem;
-  width: 57.1rem;
+  align-items: baseline;
+  width: 57.3rem;
   text-transform: uppercase;
 }
 .header-top .menu-item {
@@ -285,9 +292,9 @@ a:active {
   color: #0f7bff;
 }
 .header-content {
-  margin-top: 10rem;
-  width: 62rem;
-  height: 61.1rem;
+  margin-top: 10.6rem;
+  width: 61.1rem;
+  height: 22.3rem;
   text-align: center;
 }
 .header-content h2 {
@@ -297,28 +304,32 @@ a:active {
   line-height: 2.4rem;
 }
 .header-content p {
-  margin: 2rem 0 2rem;
+  margin: 3.2rem 0 3.7rem;
   color: #929292;
   line-height: 27px;
+}
+.header-content .btn-wrapper {
+  display: flex;
+  width: 36rem;
+  margin: 0 auto;
 }
 .header-content button:first-child {
   margin-right: 3rem;
 }
 
 .device {
-  width: 33.8rem;
-  height: 44rem;
+  width: 35.8rem;
+  height: 49.6rem;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 50% 5%;
-  background-size: 109% 120%;
+  background-size: cover;
 }
 .device-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 53rem;
+  height: 53.5rem;
   display: flex;
   width: 90rem;
   margin-top: 8rem;
@@ -327,11 +338,11 @@ a:active {
   background-image: url(../../assets/img/device-small.png);
   position: absolute;
   bottom: 0;
-  left: 3%;
+  left: -0.6rem;
 }
 .device-center {
-  width: 34.5rem;
-  height: 100%;
+  width: 44.5rem;
+  height: 109%;
   z-index: 2;
   background-image: url(../../assets/img/device.png);
 }
@@ -339,29 +350,28 @@ a:active {
   background-image: url(../../assets/img/device-small.png);
   position: absolute;
   bottom: 0;
-  right: 3%;
+  right: -0.6rem;
 }
 .device-screen {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: 50% -86%;
-  background-size: 69%;
+  background-position: 50% 6rem;
+  background-size: 65%;
 }
 .device-screen-left {
   background-image: url(../../assets/img/Place_screen-small-left.png);
 }
 .device-screen-center {
   background-image: url(../../assets/img/Place_Your_screen-center.png);
-  background-position: 50% -17%;
-  background-size: 75%;
+  background-size: 69%;
 }
 .device-screen-right {
   background-image: url(../../assets/img/Place_your_screen-rigth.png);
 }
 
 .features {
-  height: 63.5rem;
+  height: 63rem;
   background-color: #f5fcfd;
   border: solid transparent;
 }
@@ -388,7 +398,7 @@ a:active {
   width: 7rem;
   height: 7rem;
   margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-radius: 50%;
   background-size: 45%;
   background-repeat: no-repeat;
@@ -408,8 +418,8 @@ a:active {
   background-image: url(../../assets/img/feature-icon3.png);
 }
 .features .feature-item_header {
-  margin-bottom: 2.5rem;
-  font-weight: 500;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
   font-size: 1.8rem;
   color: #333333;
   line-height: 2.7rem;
@@ -428,7 +438,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 162.9rem;
+  width: 112.9rem;
   height: 93rem;
   margin-left: 39rem;
   margin-right: 40.1rem;
@@ -436,7 +446,7 @@ a:active {
 .about .article-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 105rem;
   height: 40rem;
 }
@@ -446,6 +456,7 @@ a:active {
 .about .article-wrapper_left {
   flex-direction: row-reverse;
   align-self: flex-start;
+  width: 106.3rem;
 }
 .about .app-screens {
   position: relative;
@@ -466,19 +477,19 @@ a:active {
 .about .app-screens_background {
   position: absolute;
   z-index: -1;
-  width: 49rem;
-  height: 42rem;
+  width: 48rem;
+  height: 42.5rem;
   background-color: #0f7bff;
   transform: rotate(50deg);
   border-radius: 10%;
 }
 .about .app-screens_background_top {
-  top: -9%;
-  left: -27%;
+  top: -10%;
+  left: -33%;
 }
 .about .app-screens_background_bottom {
-  bottom: -8%;
-  right: -37%;
+  bottom: -9%;
+  right: -32%;
 }
 .about-item {
   display: flex;
@@ -486,18 +497,21 @@ a:active {
   justify-content: space-between;
   align-items: flex-start;
   width: 54.4rem;
-  height: 20.8rem;
+  height: 22.4rem;
+  margin-top: 8.6rem;
 }
-.about-item header {
+.about-item h2 {
   color: #333333;
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.6rem;
 }
 
 .instruction {
+  box-sizing: border-box;
   height: 64.6rem;
   background-color: #f5fcfd;
+  padding-top: 12.5rem;
 }
 .instruction-wrapper {
   display: flex;
@@ -513,16 +527,19 @@ a:active {
   z-index: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 4.7rem;
+  margin-top: 5rem;
   width: 107.6rem;
   height: 25.6rem;
 }
 .instruction-item_header {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2.7rem;
   color: #333333;
+}
+.instruction-item p {
+  width: 101%;
 }
 .instruction-item-icon {
   width: 10rem;
@@ -530,7 +547,7 @@ a:active {
   background-color: #dfedff;
   margin: 0 auto;
   border-radius: 50%;
-  margin-bottom: 3.1rem;
+  margin-bottom: 2.6rem;
   background-size: 45%;
   background-repeat: no-repeat;
   background-position: center;
@@ -555,7 +572,9 @@ a:active {
 }
 
 .pricing {
+  box-sizing: border-box;
   height: 83.6rem;
+  padding-top: 13rem;
 }
 .pricing-wrapper {
   display: flex;
@@ -567,24 +586,27 @@ a:active {
 .pricing-plan {
   width: 33.1rem;
   height: 26.6rem;
-  margin-right: 6.9rem;
+  margin-right: 5.9rem;
 }
 .pricing-plan h2 {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.6rem;
   color: #333333;
-  margin-bottom: 3.3rem;
+  margin-bottom: 3rem;
 }
 .pricing-plan__btn-wrapper {
   display: flex;
-  margin-top: 3.7rem;
+  margin-top: 3.4rem;
 }
 .pricing-plan__btn-left {
   border-radius: 25px 0 0 25px;
+  border-right: none;
+  width: 16.7rem;
 }
 .pricing-plan__btn-right {
   border-radius: 0 25px 25px 0;
+  border-left: none;
 }
 .pricing-card {
   display: flex;
@@ -608,12 +630,12 @@ a:active {
   position: relative;
   width: 10rem;
   height: 10rem;
-  margin-top: 3rem;
-  margin-bottom: 1.9rem;
+  margin-top: 4rem;
+  margin-bottom: 2.2rem;
 }
 .pricing-card__icon-img {
   position: absolute;
-  top: 25%;
+  top: 24%;
   left: 25%;
   width: 5.5rem;
   height: 5.5rem;
@@ -631,9 +653,9 @@ a:active {
 }
 .pricing-card h2 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #333333;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 .pricing-card__horizontal {
   width: 16.5rem;
@@ -642,15 +664,15 @@ a:active {
   margin-bottom: 1.9rem;
 }
 .pricing-card__service {
-  height: 15.4rem;
+  height: 16.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.7rem;
+  margin-bottom: 1.7rem;
 }
 .pricing-card .price {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.6rem;
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 3.6rem;
@@ -663,7 +685,6 @@ a:active {
 
 .testimonials {
   display: flex;
-  align-items: center;
   height: 60.8rem;
   background-color: #f5fcfd;
 }
@@ -674,12 +695,13 @@ a:active {
 .testimonials-wrapper {
   width: 103.9rem;
   height: 37.8rem;
+  margin-top: 12.5rem;
   margin-left: 12.7rem;
   overflow: hidden;
 }
 .testimonials__header {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.6rem;
   color: #333333;
   margin-bottom: 4.4rem;
@@ -709,7 +731,7 @@ a:active {
 }
 .testimonials .review-item__header {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #333333;
 }
 .testimonials .review-item__sub-header {
@@ -717,7 +739,7 @@ a:active {
   margin-bottom: 2.9rem;
 }
 .testimonials .review-item p {
-  margin-top: 1.9rem;
+  margin-top: 1.5rem;
 }
 .testimonials__pagination {
   display: flex;
@@ -740,6 +762,8 @@ a:active {
 }
 
 .lastest-news {
+  box-sizing: border-box;
+  padding-top: 12.5rem;
   height: 96rem;
 }
 .lastest-news__wrapper {
@@ -765,7 +789,6 @@ a:active {
 .post_big {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 .post__preview {
@@ -779,12 +802,14 @@ a:active {
 }
 .post__header {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2.8rem;
   color: #333333;
 }
 .post__header_big {
+  margin-top: 3rem;
   font-size: 2.4rem;
+  font-weight: 600;
   line-height: 3.6rem;
   color: #0f7bff;
 }
@@ -795,10 +820,16 @@ a:active {
   margin-bottom: 4rem;
 }
 .post__main-content {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.post__text-wrapper {
+  margin-top: -0.7rem;
 }
 
 .free-trial {
+  box-sizing: border-box;
+  padding-top: 12.5rem;
   height: 33.6rem;
   background-color: #f5fcfd;
 }
@@ -808,14 +839,14 @@ a:active {
   justify-content: center;
 }
 .free-trial .text-content {
-  margin-right: 16.2rem;
+  margin-right: 16.5rem;
 }
 .free-trial .text-content h2 {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 3.6rem;
   color: #333333;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 .page-footer {
@@ -834,21 +865,21 @@ a:active {
   line-height: 2.4rem;
   color: #fff;
   margin-top: 13rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.1rem;
 }
 .page-footer .subscribe {
   display: flex;
   align-items: center;
-  width: 55.5rem;
+  width: 56rem;
   height: 6rem;
   margin-bottom: 13rem;
 }
 .page-footer .subscribe__email {
   flex-grow: 1;
-  height: 5rem;
+  height: 5.6rem;
   border: 2px solid #fff;
   border-right: none;
-  border-radius: 25px 0 0 25px;
+  border-radius: 50px 0 0 50px;
   background-color: transparent;
   padding: 0 5%;
   font-size: 1.6rem;
@@ -863,9 +894,9 @@ a:active {
   color: #fff;
 }
 .page-footer .subscribe__btn {
-  width: 16.5rem;
-  height: 6rem;
-  border-radius: 0 25px 25px 0;
+  width: 16.8rem;
+  height: 6.5rem;
+  border-radius: 0 50px 50px 0;
   border-left: none;
   background-color: #fff;
   color: #0f7bff;
@@ -876,13 +907,14 @@ a:active {
 }
 .page-footer .horiazontal-line {
   position: absolute;
-  bottom: 10.5rem;
+  bottom: 9.5rem;
   width: 192rem;
   background-color: #fff;
 }
 .page-footer .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 3.6rem;
   width: 100%;
 }
@@ -932,9 +964,9 @@ a:active {
     font-size: 10px;
   }
 }
-@media (max-width: 1280px) {
+@media (min-width: 2560px) {
   html {
-    font-size: 7px;
+    font-size: 13.3px;
   }
 }
 
