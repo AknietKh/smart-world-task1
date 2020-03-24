@@ -11,6 +11,15 @@
   <body>
     <div class="main-content">
 
+      <nav class="menu m-menu">
+        <a class="close-m-menu">&times;</a>
+        <a class="menu-item _link-theme" href="#">Home</a>
+        <a class="menu-item _link-theme" href="#">Features</a>
+        <a class="menu-item _link-theme" href="#">Pricing</a>
+        <a class="menu-item _link-theme" href="#">Pages</a>
+        <button class="btn btn_fill btn_dark">SIGN UP</button>
+      </nav>
+
       <header class="page-header">
         <a name="top"></a>
 
@@ -29,6 +38,8 @@
     
             <button class="btn btn_fill btn_dark">SIGN UP</button>
           </div>
+
+          <a href="#" class="m-menu-link"><span class="menu-burger"></span></a>
         </section>
 
         <div class="header-content">
@@ -73,31 +84,34 @@
       <main>
         <section class="features">
           <a name="next-section"></a>
-          <div class="content-align">
-            <div class="features-wrapper">
+          <div class="content-align features-wrapper">
 
-              <div class="feature-item">
-                <span class="feature-item-icon feature-item_icon1"></span>
-                <h2 class="feature-item_header">Analysis</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-              
-              <div class="feature-item feature-item_center">
-                <span class="feature-item-icon feature-item_icon2"></span>
-                <h2 class="feature-item_header">Clean Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-
-              <div class="feature-item">
-                <span class="feature-item-icon feature-item_icon3"></span>
-                <h2 class="feature-item_header">Messaging</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore</p>
-              </div>
-
+            <div class="feature-item">
+              <span class="feature-item-icon feature-item_icon1"></span>
+              <h2 class="feature-item_header">Analysis</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore</p>
             </div>
+            
+            <div class="feature-item feature-item_center">
+              <span class="feature-item-icon feature-item_icon2"></span>
+              <h2 class="feature-item_header">Clean Design</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-item-icon feature-item_icon3"></span>
+              <h2 class="feature-item_header">Messaging</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore</p>
+            </div>
+
+            <!-- <div class="features-wrapper">
+
+              
+
+            </div> -->
           </div>
         </section>
 
@@ -213,51 +227,64 @@
             </div>
 
             <article class="pricing-card">
-              <div class="pricing-card__icon-wrapper">
-                <div class="pricing-card__icon pricing-card__icon_big"></div>
-                <div class="pricing-card__icon pricing-card__icon_small"></div>
-                <img src="./assets/img/pricing-icon1.png" alt="Standard" class="pricing-card__icon-img">
-              </div>
-
-              <h2>Standard</h2>
+              <header class="pricing-card__wrapper">
+                <div class="pricing-card__icon-wrapper">
+                  <div class="pricing-card__icon pricing-card__icon_big"></div>
+                  <div class="pricing-card__icon pricing-card__icon_small"></div>
+                  <img src="./assets/img/pricing-icon1.png" alt="Standard" class="pricing-card__icon-img">
+                </div>
+  
+                <h2>Standard</h2>
+              </header>
 
               <hr class="pricing-card__horizontal">
 
-              <ul class="pricing-card__service">
-                <li>2gb Hosting</li>
-                <li>10 Custom Domain</li>
-                <li>SSD Hosting</li>
-                <li>50 gb Bandwith</li>
-                <li>Free Support</li>
-              </ul>
-
-              <span class="price"><span class="currency">$</span>19.00</span>
-
-              <button class="btn btn_fill">Try Now</button>
+              <section class="pricing-card__wrapper">
+                <ul class="pricing-card__service">
+                  <li>2gb Hosting</li>
+                  <li>10 Custom Domain</li>
+                  <li>SSD Hosting</li>
+                  <li>50 gb Bandwith</li>
+                  <li>Free Support</li>
+                </ul>
+  
+                <div class="pricing-card__wrapper_buy">
+                  <span class="price"><span class="currency">$</span>19.00</span>
+  
+                  <button class="btn btn_fill">Try Now</button>
+                </div>
+              </section>
             </article>
 
             <article class="pricing-card">
-              <div class="pricing-card__icon-wrapper">
-                <div class="pricing-card__icon pricing-card__icon_big"></div>
-                <div class="pricing-card__icon pricing-card__icon_small"></div>
-                <img src="./assets/img/pricing-icon2.png" alt="premium" class="pricing-card__icon-img">
-              </div>
+              <header class="pricing-card__wrapper">
+                <div class="pricing-card__icon-wrapper">
+                  <div class="pricing-card__icon pricing-card__icon_big"></div>
+                  <div class="pricing-card__icon pricing-card__icon_small"></div>
+                  <img src="./assets/img/pricing-icon2.png" alt="premium" class="pricing-card__icon-img">
+                </div>
+  
+                <h2>Premium</h2>
+              </header>
 
-              <h2>Premium</h2>
-              
               <hr class="pricing-card__horizontal">
 
-              <ul class="pricing-card__service">
-                <li>2gb Hosting</li>
-                <li>10 Custom Domain</li>
-                <li>SSD Hosting</li>
-                <li>50 gb Bandwith</li>
-                <li>Free Support</li>
-              </ul>
-
-              <span class="price"><span class="currency">$</span>49.00</span>
-
-              <button class="btn">Try Now</button>
+              <section class="pricing-card__wrapper">
+                <ul class="pricing-card__service">
+                  <li>2gb Hosting</li>
+                  <li>10 Custom Domain</li>
+                  <li>SSD Hosting</li>
+                  <li>50 gb Bandwith</li>
+                  <li>Free Support</li>
+                </ul>
+  
+                <div class="pricing-card__wrapper_buy">
+                  <span class="price"><span class="currency">$</span>49.00</span>
+  
+                  <button class="btn">Try Now</button>
+                </div>
+              </section>
+              
             </article>
 
           </div>
@@ -425,7 +452,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <div class="page-footer">
         <div class="content-align page-footer__wrapper">
           <div class="logo">AppSon</div>
         
@@ -434,20 +461,24 @@
             <button class="btn subscribe__btn">SUBSCRIBE</button>
           </form>
 
-          <hr class="horiazontal-line">
+          <!-- <hr class="horiazontal-line"> -->
 
-          <div class="footer">
-            <span class="copyright">© 2018 Copyright, All Rights Reserved by AppSon</span>
-            <nav class="footer__nav">
-              <a href="#" class="footer__nav-item">Terms & Condition</a>
-              <a href="#" class="footer__nav-item">Privacy Policy</a>
-              <a href="#" class="footer__nav-item">Help</a>
-            </nav>
-            <div class="social-media">
-              <a href="https://www.facebook.com/" class="social-media__link social-media__link-fb" target="_blank"></a>
-              <a href="https://twitter.com/" class="social-media__link social-media__link-tw" target="_blank"></a>
-              <a href="http://www.youtube.com/" class="social-media__link social-media__link-yt" target="_blank"></a>
-            </div>
+          
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="content-align footer__wrapper">
+          <div class="copyright__wrapper"><span class="copyright">© 2018 Copyright, All Rights Reserved by AppSon</span></div>
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-item">Terms & Condition</a>
+            <a href="#" class="footer__nav-item">Privacy Policy</a>
+            <a href="#" class="footer__nav-item">Help</a>
+          </nav>
+          <div class="social-media">
+            <a href="https://www.facebook.com/" class="social-media__link social-media__link-fb" target="_blank"></a>
+            <a href="https://twitter.com/" class="social-media__link social-media__link-tw" target="_blank"></a>
+            <a href="http://www.youtube.com/" class="social-media__link social-media__link-yt" target="_blank"></a>
           </div>
         </div>
       </footer>
@@ -461,5 +492,19 @@
       </div>
 
     </div>
+
+    <script>
+      const menuBtn = document.querySelector('.m-menu-link');
+      const closeBtn = document.querySelector('.close-m-menu');
+      const menu = document.querySelector('.m-menu');
+
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('m-menu_active');
+      })
+
+      closeBtn.addEventListener('click', () => {
+        menu.classList.toggle('m-menu_active');
+      })
+    </script>
   </body>
 </html>
