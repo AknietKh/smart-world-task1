@@ -3,6 +3,7 @@ html {
 }
 
 .main-content {
+  position: relative;
   width: 100%;
   overflow: hidden;
   font-family: "Quicksand", sans-serif;
@@ -13,7 +14,45 @@ html {
 }
 
 .content-wrapper {
-  width: 112.6rem;
+  max-width: 112.6rem;
+  width: 100%;
+}
+
+main {
+  height: 204rem;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 1%;
+  right: 7.8%;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #0f7bff;
+  border-radius: 3px;
+}
+.scroll a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.scroll__arrow {
+  width: 0.2rem;
+  height: 2rem;
+  position: relative;
+  top: 1.5rem;
+  background-color: #fff;
+}
+.scroll__arrow_top {
+  position: relative;
+  top: -0.5rem;
+  border: 1px solid #fff;
+  width: 1rem;
+  height: 1rem;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
 }
 
 @media only screen and (min-width: 1920px) {

@@ -1,0 +1,259 @@
+$bgcolor-1: #f5fcfd;
+$blue-primary: #0f7bff;
+$blue-dark: #0063dd;
+$blue-light: #dfedff;
+$text-color: #929292;
+$header-color: #333333;
+
+%border {
+  border: 1px solid red;
+}
+
+.sub-footer {
+  box-sizing: border-box;
+  display: flex;
+  
+  align-items: center;
+  padding: 13rem 4rem;
+  padding-left: 39.1rem;
+  height: 45.3rem;
+  background-color: $bgcolor-1;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 107.7rem;
+    height: 100%;
+  }
+
+  .logo {
+    margin-bottom: 2.6rem;
+
+    &-wrapper {
+      max-width: 46rem;
+      width: 100%;
+      height: 19.3rem;
+    }
+
+    &__text {
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      color: $blue-primary;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    width: 7.8rem;
+    height: 2rem;
+    margin-top: 3.6rem;
+
+    &__link {
+      width: 2.6rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &-fb {
+        background-image: url(../../assets/img/social-media-dark.png);
+      }
+
+      &-tw {
+        background-image: url(../../assets/img/social-media-dark.png);
+        background-position-x: 50%;
+      }
+
+      &-yt {
+        background-image: url(../../assets/img/social-media-dark.png);
+        background-position-x: 100%;
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &-wrapper {
+      width: 100%;
+      max-width: 49.6rem;
+      height: 19.3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__header {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.7rem;
+      color: $header-color;
+      margin-top: -0.7rem;
+      margin-bottom: 2.7rem;
+    }
+
+    &__item {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+      color: $text-color;
+      text-decoration: none;
+      margin-bottom: 0.6rem;
+
+      &_active {
+        color: $blue-primary;
+      }
+    }
+  }
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3.2rem 4rem 4.2rem;
+  border-top: 1px solid $text-color;
+  background-color: $bgcolor-1;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 114rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 34.8rem;
+    
+    &-item {
+      text-decoration: none;
+      color: $text-color;
+
+      &_active {
+        color: $blue-primary;
+      }
+    }  
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+
+@media only screen and  (min-width: 1930px) and (max-width: 2550px){
+  .sub-footer {
+    justify-content: center;
+    padding: 13rem 4rem;
+  }
+}
+
+@media only screen and  (max-width: 1910px){
+  .sub-footer {
+    justify-content: center;
+    padding: 13rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 7px;
+  }
+
+  .sub-footer {
+    padding: 13rem 4rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-device-width : 1024px) {
+  html {
+    font-size: 6px;
+  }
+
+  .sub-footer {
+    padding: 13rem 4rem;
+
+    .logo-wrapper {
+      margin-bottom: 6rem;
+    }
+  }
+
+  .scroll {
+    bottom: 4%;
+  }
+}
+
+@media only screen and (max-device-width : 700px) {
+  .sub-footer {
+    height: 100%;
+    padding: 5rem 4rem;
+    &-wrapper {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-wrapper {
+      max-width: 70rem;
+    }
+
+    &-nav-wrapper {
+      max-width: 70rem;
+    }
+  }
+
+  .scroll {
+    bottom: 3.5%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 500px) {
+  .page-footer{
+    &-wrapper {
+      // max-width: 80%;
+    }
+
+    &__copyright-wrapper {
+      width: 40%;
+    }
+
+    &__nav {
+      width: 50%;
+
+      &-item {
+        margin-left: 2rem;
+
+        :last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .scroll {
+    bottom: 4%;
+  }
+}
+
+@media only screen and (max-width: 353px) {
+  .scroll {
+    bottom: 5%;
+  }
+}

@@ -1,3 +1,209 @@
+.sub-footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 13rem 4rem;
+  padding-left: 39.1rem;
+  height: 45.3rem;
+  background-color: #f5fcfd;
+}
+.sub-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 107.7rem;
+  height: 100%;
+}
+.sub-footer .logo {
+  margin-bottom: 2.6rem;
+}
+.sub-footer .logo-wrapper {
+  max-width: 46rem;
+  width: 100%;
+  height: 19.3rem;
+}
+.sub-footer .logo__text {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #0f7bff;
+}
+.sub-footer .social-media {
+  display: flex;
+  width: 7.8rem;
+  height: 2rem;
+  margin-top: 3.6rem;
+}
+.sub-footer .social-media__link {
+  width: 2.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sub-footer .social-media__link-fb {
+  background-image: url(../../assets/img/social-media-dark.png);
+}
+.sub-footer .social-media__link-tw {
+  background-image: url(../../assets/img/social-media-dark.png);
+  background-position-x: 50%;
+}
+.sub-footer .social-media__link-yt {
+  background-image: url(../../assets/img/social-media-dark.png);
+  background-position-x: 100%;
+}
+.sub-footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sub-footer-nav-wrapper {
+  width: 100%;
+  max-width: 49.6rem;
+  height: 19.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sub-footer-nav__header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  color: #333333;
+  margin-top: -0.7rem;
+  margin-bottom: 2.7rem;
+}
+.sub-footer-nav__item {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #929292;
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
+.sub-footer-nav__item_active {
+  color: #0f7bff;
+}
 
+.page-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3.2rem 4rem 4.2rem;
+  border-top: 1px solid #929292;
+  background-color: #f5fcfd;
+}
+.page-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 114rem;
+}
+.page-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 34.8rem;
+}
+.page-footer__nav-item {
+  text-decoration: none;
+  color: #929292;
+}
+.page-footer__nav-item_active {
+  color: #0f7bff;
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media only screen and (min-width: 1930px) and (max-width: 2550px) {
+  .sub-footer {
+    justify-content: center;
+    padding: 13rem 4rem;
+  }
+}
+@media only screen and (max-width: 1910px) {
+  .sub-footer {
+    justify-content: center;
+    padding: 13rem 4rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 7px;
+  }
+
+  .sub-footer {
+    padding: 13rem 4rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-device-width: 1024px) {
+  html {
+    font-size: 6px;
+  }
+
+  .sub-footer {
+    padding: 13rem 4rem;
+  }
+  .sub-footer .logo-wrapper {
+    margin-bottom: 6rem;
+  }
+
+  .scroll {
+    bottom: 4%;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+  .sub-footer {
+    height: 100%;
+    padding: 5rem 4rem;
+  }
+  .sub-footer-wrapper {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-footer .logo-wrapper {
+    max-width: 70rem;
+  }
+  .sub-footer-nav-wrapper {
+    max-width: 70rem;
+  }
+
+  .scroll {
+    bottom: 3.5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .page-footer__copyright-wrapper {
+    width: 40%;
+  }
+  .page-footer__nav {
+    width: 50%;
+  }
+  .page-footer__nav-item {
+    margin-left: 2rem;
+  }
+  .page-footer__nav-item :last-child {
+    margin-left: 0;
+  }
+
+  .scroll {
+    bottom: 4%;
+  }
+}
+@media only screen and (max-width: 353px) {
+  .scroll {
+    bottom: 5%;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */
