@@ -56,45 +56,6 @@ a {
   margin: 0 auto;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  width: 16.5rem;
-  height: 5rem;
-  border-radius: 16%/50%;
-  border: 2px solid $blue-primary;
-  color: $blue-primary;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 2.7rem;
-  background-color: #fff;
-  cursor: pointer;
-
-  &_fill {
-    background-color: $blue-primary;
-    color: #ffffff;
-  }
-  &_dark {
-    border-color:$blue-dark;
-    background-color: $blue-dark;
-  }
-
-  &_rectangle {
-    width: 26.3rem;
-    height: 7.6rem;
-    border-radius: 5px;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-}
-
 .link {
   position: relative;
   color: $blue-primary;
@@ -290,8 +251,9 @@ a {
 	position: fixed;
 	top: 10%;
 	right: 10%;
-	font-weight: bold;
-	color: #fff;
+  font-weight: bold;
+  font-size: 3.6rem;
+	color: #000;
 }
 
 .close-m-menu:hover {
@@ -305,9 +267,7 @@ a {
 	height: 50px;
 }
 
-.menu {
-
-  &-burger {
+.menu-burger {
     position: absolute;
 	  top: 50%;
 	  left: 50%;
@@ -337,7 +297,6 @@ a {
       content: '';
       transform: translateY(5px);
     }
-  }
 }
 
 .scroll {
@@ -1627,22 +1586,3 @@ a {
     }
   }
 }
-
-/*
-.features {
-    height: 100%;
-    &-wrapper {
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin: 2rem 0;
-      height: auto;
-    }
-  }
-
-  .feature {
-    &-item {
-      
-    }
-  }
-*/
