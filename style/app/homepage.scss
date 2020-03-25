@@ -61,7 +61,7 @@ a {
   justify-content: center;
   width: 16.5rem;
   height: 5rem;
-  border-radius: 25px;
+  border-radius: 16%/50%;
   border: 2px solid $blue-primary;
   color: $blue-primary;
   font-family: 'Quicksand', sans-serif;
@@ -1131,7 +1131,7 @@ a {
     &__email {
       flex-grow: 1;
       height: 5.6rem;
-      border: 2px solid #fff;
+      border: 0.2rem solid #fff;
       border-right: none;
       border-radius: 50px 0 0 50px;
       background-color: transparent;
