@@ -494,17 +494,19 @@
     </div>
 
     <script>
-      const menuBtn = document.querySelector('.m-menu-link');
-      const closeBtn = document.querySelector('.close-m-menu');
-      const menu = document.querySelector('.m-menu');
+      (function () {
+        const menuBtn = document.querySelector('.m-menu-link');
+        const closeBtn = document.querySelector('.close-m-menu');
+        const menu = document.querySelector('.m-menu');
 
-      menuBtn.addEventListener('click', () => {
-        menu.classList.toggle('m-menu_active');
-      })
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('m-menu_active');
+        });
 
-      closeBtn.addEventListener('click', () => {
-        menu.classList.toggle('m-menu_active');
-      })
+        closeBtn.addEventListener('click', () => {
+          menu.classList.toggle('m-menu_active');
+        });
+      })()
     </script>
   </body>
 </html>
