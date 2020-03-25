@@ -427,6 +427,14 @@ a {
         &_active {
           color: $blue-primary;
         }
+
+        &:hover {
+          border-bottom: 2px solid $blue-primary;
+        }
+
+        &:active {
+          color: $blue-primary;
+        }
       }
     }
     
