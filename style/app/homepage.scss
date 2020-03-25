@@ -252,7 +252,7 @@ a {
   }
 }
 
-.m-menu{
+.m-menu {
 	position: fixed;
 	z-index: 99;
 	top: 0;
@@ -272,13 +272,13 @@ a {
 	-o-transform: translateX(100%);
   transform: translateX(100%);
   
-  a{
+  &-item {
     font-size: 3rem;
     margin-bottom: 2rem;
     color: $blue-primary;
   }
 
-  &_active{
+  &_active {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
@@ -286,7 +286,7 @@ a {
   }
 }
 
-.close-m-menu{
+.close-m-menu {
 	position: fixed;
 	top: 10%;
 	right: 10%;
@@ -294,18 +294,18 @@ a {
 	color: #fff;
 }
 
-.close-m-menu:hover{
+.close-m-menu:hover {
 	cursor: pointer;
 }
 
-.m-menu-link{
+.m-menu-link {
 	display: none;
 	position: relative;
 	width: 50px;
 	height: 50px;
 }
 
-.menu{
+.menu {
 
   &-burger {
     position: absolute;
@@ -328,12 +328,12 @@ a {
       background-color: $blue-primary;
     }
 
-    &::before{
+    &::before {
       content: '';
       transform: translateY(-5px);
     }
   
-    &::after{
+    &::after {
       content: '';
       transform: translateY(5px);
     }
