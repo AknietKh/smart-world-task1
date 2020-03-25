@@ -5,8 +5,9 @@
     <title>AppSon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/public/reset.css">
-    <link rel="stylesheet" type="text/css" href="style/public/homepage.css">
+    <link rel="stylesheet" type="text/css" href="./style/public/reset.css">
+    <link rel="stylesheet" type="text/css" href="./style/public/btn.css">
+    <link rel="stylesheet" type="text/css" href="./style/public/homepage.css">
   </head>
   <body>
     <div class="main-content">
@@ -485,31 +486,10 @@
           <div class="scroll__arrow"></div>
             <div class="scroll__arrow_top"></div>
         </a>
-        
       </div>
 
     </div>
 
-    <script>
-      (function () {
-        const menuBtn = document.querySelector('.m-menu-link');
-        const closeBtn = document.querySelector('.close-m-menu');
-        const menu = document.querySelector('.m-menu');
-        const menuItems = document.querySelectorAll('.m-menu-item');
-
-        const toogleActive = () => {
-          menu.classList.toggle('m-menu_active');
-        }
-
-        menuBtn.addEventListener('click', toogleActive);
-
-        closeBtn.addEventListener('click', toogleActive);
-
-        menuItems.forEach(item => {
-          item.addEventListener('click', toogleActive)
-        });
-
-      })()
-    </script>
+    <script src="./scripts/m-menu.js"></script>
   </body>
 </html>
