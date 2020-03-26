@@ -63,6 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 1.5rem;
 }
 .sub-header-title {
   width: 33.2rem;
@@ -215,6 +216,15 @@
   }
   .sub-header__img {
     margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .sub-header-title {
+    text-align: center;
+  }
+  .sub-header__img {
+    width: 25rem;
+    height: auto;
   }
 }
 
