@@ -30,7 +30,6 @@ main {
   display: flex;
   justify-content: center;
   padding: 13rem 4rem;
-  // padding-left: 39.1rem;
 }
 
 .main-content {
@@ -169,6 +168,10 @@ main {
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 6px;
+  }
+
+  .scroll {
+    bottom: 6%;
   }
 }
 
