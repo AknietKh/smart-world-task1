@@ -565,26 +565,20 @@ main {
   padding: 1.8rem 3rem;
   border-bottom: 1px solid #dcdcdc;
   cursor: pointer;
-}
-.left-sidebar-item:hover {
-  background-color: #0f7bff;
-  border-radius: 0.5rem;
-}
-.left-sidebar-item:active {
-  background-color: #0f7bff;
-  border-radius: 0.5rem;
-  opacity: 0.5;
-}
-.left-sidebar-item__text {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.7rem;
   color: #333333;
 }
-.left-sidebar-item__text:hover {
+.left-sidebar-item:hover {
+  background-color: #0f7bff;
+  border-radius: 0.5rem;
   color: #fff;
 }
-.left-sidebar-item__text:active {
+.left-sidebar-item:active {
+  background-color: #0f7bff;
+  border-radius: 0.5rem;
+  opacity: 0.5;
   color: #fff;
 }
 
@@ -638,9 +632,6 @@ main {
 ._active {
   background-color: #0f7bff;
   border-radius: 0.5rem;
-  color: #fff;
-}
-._active-text {
   color: #fff;
 }
 
