@@ -1,9 +1,4 @@
-$bgcolor-1: #f5fcfd;
-$blue-primary: #0f7bff;
-$blue-dark: #0063dd;
-$blue-light: #dfedff;
-$text-color: #929292;
-$header-color: #333333;
+@import "const.scss";
 
 %border {
   border: 1px solid red;
@@ -143,6 +138,50 @@ $header-color: #333333;
   }
 }
 
+.scroll {
+  position: absolute;
+  bottom: 1%;
+  right: 7.8%;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: $blue-primary;
+  border-radius: 3px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__arrow {
+    width: 0.2rem;
+    height: 2rem;
+    position: relative;
+    top: 1.5rem;
+    background-color: #fff;
+
+    &_top {
+      position: relative;
+      top: -0.5rem;
+      border: 1px solid #fff;
+      width: 1rem;
+      height: 1rem;
+      border-width: 0 0.2rem 0.2rem 0;
+      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+    }
+  }
+}
+
 @media only screen and (min-width: 1920px) {
   html {
     font-size: 10px;
@@ -178,6 +217,10 @@ $header-color: #333333;
     padding: 13rem 4rem;
     justify-content: center;
   }
+
+  .scroll {
+    bottom: 4%;
+  }
 }
 
 @media only screen and (max-device-width : 1024px) {
@@ -190,11 +233,12 @@ $header-color: #333333;
 
     .logo-wrapper {
       margin-bottom: 6rem;
+      height: 100%;
     }
-  }
 
-  .scroll {
-    bottom: 4%;
+    .social-media {
+      margin-top: 2rem;
+    }
   }
 }
 
@@ -218,42 +262,38 @@ $header-color: #333333;
   }
 
   .scroll {
-    bottom: 3.5%;
+    display: none;
+  }
+
+  .page-footer {
+
+    &__nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      height: 100%;
+    }
   }
   
 }
 
-
 @media only screen and (max-width: 500px) {
   .page-footer{
-    &-wrapper {
-      // max-width: 80%;
-    }
 
     &__copyright-wrapper {
       width: 40%;
+      margin-right: 2rem;
     }
-
-    &__nav {
-      width: 50%;
-
-      &-item {
-        margin-left: 2rem;
-
-        :last-child {
-          margin-left: 0;
-        }
-      }
-    }
-  }
-
-  .scroll {
-    bottom: 4%;
   }
 }
 
-@media only screen and (max-width: 353px) {
-  .scroll {
-    bottom: 5%;
+@media only screen and (max-width: 380px) {
+
+  .sub-footer-nav {
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
