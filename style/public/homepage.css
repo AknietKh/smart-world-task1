@@ -1014,6 +1014,17 @@ a:active {
   line-height: 2.7rem;
   cursor: pointer;
 }
+.footer__nav-item:hover {
+  opacity: 1;
+  color: #fff;
+}
+.footer__nav-item:active {
+  opacity: 0.5;
+  color: #fff;
+}
+.footer__nav-item_active {
+  color: #fff;
+}
 .footer .social-media {
   display: flex;
   width: 7.8rem;
