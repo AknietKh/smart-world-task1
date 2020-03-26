@@ -258,11 +258,9 @@
     padding: 5rem 4rem;
     &-wrapper {
       flex-direction: column;
-      // justify-content: center;
     }
 
     &__img {
-      // display: none;
       margin-top: 4rem;
     }
     
@@ -275,6 +273,10 @@
     
     &-title {
       text-align: center;
+
+      &__head {
+        line-height: 4.4rem;
+      }
     }
 
     &__img {
