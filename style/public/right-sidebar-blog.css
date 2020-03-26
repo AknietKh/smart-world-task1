@@ -226,6 +226,9 @@
   .sub-header-title {
     text-align: center;
   }
+  .sub-header-title__head {
+    line-height: 4.4rem;
+  }
   .sub-header__img {
     width: 25rem;
     height: auto;
