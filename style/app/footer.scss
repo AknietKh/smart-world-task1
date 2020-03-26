@@ -4,6 +4,16 @@
   border: 1px solid red;
 }
 
+a {
+  &:hover {
+    color: $blue-primary;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .sub-footer {
   box-sizing: border-box;
   display: flex;

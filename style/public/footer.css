@@ -1,3 +1,10 @@
+a:hover {
+  color: #0f7bff;
+}
+a:active {
+  opacity: 0.5;
+}
+
 .sub-footer {
   box-sizing: border-box;
   display: flex;
