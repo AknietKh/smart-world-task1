@@ -45,15 +45,6 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
 
-  &:hover {
-    // opacity: 0.8;
-    color: $blue-primary;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
   &_white {
     font-weight: 700;
     color: #ffffff;
@@ -69,15 +60,6 @@ a {
     height: 1px;
     background-color: $header-color;
 
-    &:hover {
-      // opacity: 0.8;
-      background-color: $blue-primary;
-    }
-  
-    &:active {
-      opacity: 0.5;
-    }
-    
     &:before {
       content: '';
       display: block;
@@ -89,15 +71,6 @@ a {
       background-color: $header-color;
       transform: rotate(-45deg);
       transform-origin: 100% 0%;
-
-      &:hover {
-        // opacity: 0.8;
-        background-color: $blue-primary;
-      }
-    
-      &:active {
-        opacity: 0.5;
-      }
     }
     
     &:after {
@@ -111,28 +84,17 @@ a {
       background-color: $header-color;
       transform: rotate(45deg);
       transform-origin: 100% 0%;
-
-      &:hover {
-        // opacity: 0.8;
-        background-color: $blue-primary;
-      }
-    
-      &:active {
-        opacity: 0.5;
-      }
     }
 
     &_blue {
       background-color: $blue-primary;
-      
-      &:after {
-        background-color: $blue-primary;
-      }
-
       &:before {
         background-color: $blue-primary;
       }
-      
+
+      &:after {
+        background-color: $blue-primary;
+      }
     }
 
     &_white {
