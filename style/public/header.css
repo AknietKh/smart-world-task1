@@ -37,6 +37,8 @@
   max-width: 57.1rem;
 }
 .page-header .menu-item {
+  box-sizing: border-box;
+  height: 3rem;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.7rem;
