@@ -1017,7 +1017,6 @@ a:active {
   cursor: pointer;
 }
 .footer__nav-item:hover {
-  opacity: 1;
   color: #fff;
 }
 .footer__nav-item:active {
@@ -1027,26 +1026,36 @@ a:active {
 .footer__nav-item_active {
   color: #fff;
 }
-.footer .social-media {
+
+.social-media {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 7.8rem;
   height: 2rem;
 }
-.footer .social-media__link {
-  width: 2.6rem;
+.social-media__link {
   background-repeat: no-repeat;
   background-size: cover;
+  color: #929292;
+  font-size: 1.8rem;
 }
-.footer .social-media__link-fb {
-  background-image: url(../../assets/img/social-media.png);
+.social-media__link:hover {
+  color: #0f7bff;
 }
-.footer .social-media__link-tw {
-  background-image: url(../../assets/img/social-media.png);
-  background-position-x: 50%;
+.social-media__link:active {
+  color: #0f7bff;
+  opacity: 0.5;
 }
-.footer .social-media__link-yt {
-  background-image: url(../../assets/img/social-media.png);
-  background-position-x: 100%;
+.social-media__link_homepage {
+  color: #d8d8d8;
+}
+.social-media__link_homepage:hover {
+  color: #fff;
+}
+.social-media__link_homepage:active {
+  color: #fff;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1229,6 +1238,7 @@ a:active {
   }
   .pricing-card__wrapper:last-child {
     width: 100%;
+    padding-bottom: 2rem;
   }
   .pricing-card__wrapper_buy {
     display: flex;
