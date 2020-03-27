@@ -1021,6 +1021,10 @@ main {
     flex-direction: column;
     align-items: center;
   }
+
+  .popular-tags {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=right-sidebar-blog.css.map */

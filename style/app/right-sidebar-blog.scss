@@ -171,9 +171,7 @@ main {
 }
 
 .post {
-  // @extend %border;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 75rem;
@@ -537,7 +535,6 @@ main {
 
 @media only screen and (max-device-width : 480px) {
 
-
   .blog-post {
     align-items: center;
     height: 100%;
@@ -572,5 +569,9 @@ main {
       flex-direction: column;
       align-items: center;
     }
+  }
+
+  .popular-tags {
+    height: 100%;
   }
 }
