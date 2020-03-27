@@ -373,6 +373,8 @@ a {
       }
 
       &-item {
+        box-sizing: border-box;
+        height: 3rem;
         margin-right: 4rem;
         font-weight: 700;
         line-height: 27px;
