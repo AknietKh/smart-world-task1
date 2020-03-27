@@ -1170,7 +1170,6 @@ a {
       cursor: pointer;
 
       &:hover {
-        opacity: 1;
         color: #fff;
       }
 
@@ -1185,28 +1184,75 @@ a {
     }
   }
 
-  .social-media {
-    display: flex;
-    width: 7.8rem;
-    height: 2rem;
+  // .social-media {
+  //   display: flex;
+  //   width: 7.8rem;
+  //   height: 2rem;
 
-    &__link {
-      width: 2.6rem;
-      background-repeat: no-repeat;
-      background-size: cover;
+  //   &__link {
+  //     width: 2.6rem;
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
 
-      &-fb {
-        background-image: url(../../assets/img/social-media.png);
+  //     &:hover {
+  //       filter: brightness(10);
+  //     }
+      
+  //     &:active {
+  //       opacity: 0.5;
+  //       filter: brightness(10);
+  //     }
+
+  //     &-fb {
+  //       background-image: url(../../assets/img/social-media.png);
+  //       filter: contrast(0.7);
+  //     }
+
+  //     &-tw {
+  //       background-image: url(../../assets/img/social-media.png);
+  //       background-position-x: 50%;
+  //     }
+
+  //     &-yt {
+  //       background-image: url(../../assets/img/social-media.png);
+  //       background-position-x: 100%;
+  //     }
+  //   }
+  // }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.8rem;
+  height: 2rem;
+
+  &__link {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $text-color;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: $blue-primary;
+    }
+
+    &:active {
+      color: $blue-primary;
+      opacity: 0.5;
+    }
+
+    &_homepage{
+      color: #d8d8d8;
+
+      &:hover {
+        color: #fff;
       }
-
-      &-tw {
-        background-image: url(../../assets/img/social-media.png);
-        background-position-x: 50%;
-      }
-
-      &-yt {
-        background-image: url(../../assets/img/social-media.png);
-        background-position-x: 100%;
+  
+      &:active {
+        color: #fff;
+        opacity: 0.5;
       }
     }
   }
@@ -1430,6 +1476,7 @@ a {
         }
         &:last-child {
           width: 100%;
+          padding-bottom: 2rem;
         }
 
         &_buy {
