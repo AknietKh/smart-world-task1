@@ -9,11 +9,37 @@
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: $header-color;
+
+  &:hover {
+    color: $blue-primary;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.sign-up_white {
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.5;
+  }
+}
+
 .page-header {
   box-sizing: border-box;
   // height: 10rem;
   padding: 2.5rem 4rem;
-  border-bottom: 1px solid $text-color;
   background-color: $bgcolor-1;
 
   &-wrapper {
@@ -83,6 +109,7 @@
   align-items: center;
   padding: 0 4rem;
   background-color: $bgcolor-1;
+  border-top: 1px solid $text-color;
 
   &-wrapper {
     display: flex;
