@@ -1357,6 +1357,12 @@ a:active {
     width: 40%;
   }
 }
+@media only screen and (max-width: 500px) {
+  .footer__nav {
+    flex-direction: column;
+    width: 16rem;
+  }
+}
 @media only screen and (max-width: 380px) {
   .pricing-card__wrapper_buy {
     flex-direction: column;
@@ -1375,6 +1381,10 @@ a:active {
   .about .app-screens_background_bottom {
     right: 0%;
     bottom: auto;
+  }
+
+  .social-media {
+    width: 10rem;
   }
 }
 
