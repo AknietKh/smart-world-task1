@@ -883,6 +883,11 @@ a:active {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 3.6rem;
+}
+.post__header_link {
+  color: #333333;
+}
+.post__header_link:hover {
   color: #0f7bff;
 }
 .post_small {

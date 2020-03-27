@@ -1018,7 +1018,14 @@ a {
       font-size: 2.4rem;
       font-weight: 600;
       line-height: 3.6rem;
-      color: $blue-primary;
+    }
+
+    &_link {
+      color: $header-color;
+
+      &:hover {
+        color: $blue-primary;
+      }
     }
   }
 
@@ -1183,42 +1190,6 @@ a {
       }
     }
   }
-
-  // .social-media {
-  //   display: flex;
-  //   width: 7.8rem;
-  //   height: 2rem;
-
-  //   &__link {
-  //     width: 2.6rem;
-  //     background-repeat: no-repeat;
-  //     background-size: cover;
-
-  //     &:hover {
-  //       filter: brightness(10);
-  //     }
-      
-  //     &:active {
-  //       opacity: 0.5;
-  //       filter: brightness(10);
-  //     }
-
-  //     &-fb {
-  //       background-image: url(../../assets/img/social-media.png);
-  //       filter: contrast(0.7);
-  //     }
-
-  //     &-tw {
-  //       background-image: url(../../assets/img/social-media.png);
-  //       background-position-x: 50%;
-  //     }
-
-  //     &-yt {
-  //       background-image: url(../../assets/img/social-media.png);
-  //       background-position-x: 100%;
-  //     }
-  //   }
-  // }
 }
 
 .social-media {
