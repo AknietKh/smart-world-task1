@@ -724,22 +724,25 @@ main {
   color: #929292;
 }
 .post-people-info__date {
-  width: 100px;
-  padding-left: 25px;
+  width: 10rem;
+  padding-left: 2.5rem;
   background: url(../../assets/img/people-info-icons.png) no-repeat;
-  background-position: 0px 64%;
+  background-position: 0% 64%;
+  background-size: 30rem;
 }
 .post-people-info__comment {
-  width: 20px;
+  width: 2rem;
   background: url(../../assets/img/people-info-icons.png) no-repeat;
-  background-position: -147px 64%;
-  padding-left: 25px;
+  background-position: -16rem 64%;
+  padding-left: 2.5rem;
+  background-size: 30rem;
 }
 .post-people-info__like {
-  width: 20px;
-  padding-left: 26px;
+  width: 2rem;
+  padding-left: 2.6rem;
   background: url(../../assets/img/people-info-icons.png) no-repeat;
-  background-position: -257px 64%;
+  background-position: -28rem 64%;
+  background-size: 30rem;
 }
 .post .blog-post-header {
   margin-bottom: 3rem;
