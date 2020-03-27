@@ -1,0 +1,180 @@
+@import "const.scss";
+@import "header.scss", "footer.scss";
+@import "btn.scss";
+@import "right-sidebar-blog.scss";
+
+.post-details {
+
+  &__header {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    color: $header-color;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 7.8rem;
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__people-info {
+    max-width: 35.6rem;
+    width: 100%;
+
+    &_comment {
+      margin-right: 4rem;
+    }
+  }
+}
+
+.post-img_details {
+  max-width: 75rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3.3rem;
+}
+
+.quote {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 62.4rem;
+  width: 100%;
+  height: 11.2rem;
+  padding-left: 9.8rem;
+  padding-top: 3.4rem;
+  margin-top: 3.7rem;
+  margin-bottom: 3rem;
+  color: $header-color;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.tags-share {
+  display: flex;
+  align-items: flex-end;
+  height: 9.2rem;
+  margin-top: 4.4rem;
+  border-top: 1px solid $border;
+}
+
+.blog-details-tag_active {
+  border-radius: 1.4rem;
+  border: 1px solid $blue-primary;
+  color: $blue-primary;
+  width: 8.6rem;
+  height: 2.8rem;
+  margin-left: 1.2rem;
+}
+
+.tags {
+  flex-grow: 1;
+}
+
+.share {
+  display: flex;
+  height: 4.8rem;
+  width: 15.8rem;
+}
+
+.social-media_share {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.6rem;
+  width: 9.8rem;
+}
+
+.next-prev {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10.1rem;
+  margin-top: 3.4rem;
+  border-bottom: 1px solid $border;
+}
+
+.btn:first-child {
+  margin-right: 3rem;
+}
+
+.leave-comment {
+  margin-top: 4.4rem;
+  height: 38.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    max-width: 36.5rem;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid $border;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: #000;
+
+    &:first-child {
+      margin-right: 3rem;
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: "Quicksand", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+      color: $text-color;
+    }
+
+    &::-moz-placeholder {
+      color: #fff;
+    }
+  }
+
+  &__textarea {
+    max-width: 75rem;
+    width: 100%;
+    height: 16rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 1.8rem;
+  }
+}
+
+.input-wrapper {
+  margin-top: 2.2rem;
+  display: flex;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .post-details {
+
+    &__header{
+      margin-bottom: 2rem;
+  
+      &-wrapper {
+        height: 100%;
+      }
+    }
+
+    .quote {
+      height: 100%;
+    }
+  }
+}
