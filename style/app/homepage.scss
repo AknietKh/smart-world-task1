@@ -10,7 +10,9 @@ html {
 
 a {
   text-decoration: none;
+  
   &:hover {
+    z-index: 2;
     opacity: 0.8;
   }
 
@@ -185,12 +187,12 @@ a {
   background-color: #fff;
   z-index: 2;
   
-  a {
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  
 
   .arrow {
     width: 0.3rem;
@@ -315,12 +317,10 @@ a {
   }
 
   &__arrow {
-    width: 0.2rem;
     height: 2rem;
-    background-color: #dcdcdc;
+    border-right: 0.2rem solid #0f7bff;
     position: relative;
     top: 1.5rem;
-    background-color: $blue-primary;
 
     &_top {
       position: relative;

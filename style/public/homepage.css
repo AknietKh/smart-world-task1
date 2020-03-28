@@ -6,6 +6,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  z-index: 2;
   opacity: 0.8;
 }
 a:active {
@@ -163,8 +164,6 @@ a:active {
   border-radius: 50%;
   background-color: #fff;
   z-index: 2;
-}
-.next-section-btn a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,12 +284,10 @@ a:active {
   align-items: center;
 }
 .scroll__arrow {
-  width: 0.2rem;
   height: 2rem;
-  background-color: #dcdcdc;
+  border-right: 0.2rem solid #0f7bff;
   position: relative;
   top: 1.5rem;
-  background-color: #0f7bff;
 }
 .scroll__arrow_top {
   position: relative;
