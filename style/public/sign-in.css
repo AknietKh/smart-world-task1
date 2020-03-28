@@ -72,7 +72,7 @@ a:active {
   color: #0f7bff;
 }
 .page-header .menu-item:hover {
-  border-bottom: 2px solid #0f7bff;
+  color: #0f7bff;
 }
 .page-header .menu-item:active {
   color: #0f7bff;
@@ -618,7 +618,7 @@ a:active {
   color: #0f7bff;
 }
 .page-header .menu-item:hover {
-  border-bottom: 2px solid #0f7bff;
+  color: #0f7bff;
 }
 .page-header .menu-item:active {
   color: #0f7bff;
@@ -1108,7 +1108,6 @@ html {
 }
 
 main {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1116,7 +1115,6 @@ main {
 }
 
 .main-content {
-  box-sizing: border-box;
   width: 100%;
   max-width: 114rem;
   display: flex;
@@ -1203,7 +1201,6 @@ main {
 }
 
 .log-in {
-  display: flex;
   margin-bottom: 2.6rem;
   margin-top: -0.9rem;
 }
@@ -1231,7 +1228,7 @@ main {
   }
 
   main {
-    height: 60.5vh;
+    height: 52.5vh;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1240,7 +1237,7 @@ main {
   }
 
   main {
-    height: 66vh;
+    height: 60vh;
   }
 
   .scroll {
@@ -1249,7 +1246,7 @@ main {
 }
 @media only screen and (max-width: 700px) {
   main {
-    height: 60vh;
+    height: 46vh;
   }
 }
 .login-form__links {
