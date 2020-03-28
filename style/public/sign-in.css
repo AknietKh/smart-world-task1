@@ -1262,4 +1262,55 @@ main {
   color: #0f7bff;
 }
 
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 1920px) {
+  body {
+    height: 100vh;
+  }
+
+  main {
+    height: 45.5vh;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 7px;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  main {
+    height: 52.5vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 6px;
+  }
+
+  main {
+    height: 60vh;
+  }
+
+  .scroll {
+    bottom: 6%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  main {
+    height: 54vh;
+  }
+}
+
 /*# sourceMappingURL=sign-in.css.map */
