@@ -15,17 +15,17 @@
 
       <nav class="m-menu">
         <a class="close-m-menu">&times;</a>
-        <a class="m-menu-item" href="#top">Home</a>
-        <a class="m-menu-item" href="#features">Features</a>
-        <a class="m-menu-item" href="#pricing">Pricing</a>
+        <a class="m-menu-item" href="#top" name="scroll-link">Home</a>
+        <a class="m-menu-item" href="#features" name="scroll-link">Features</a>
+        <a class="m-menu-item" href="#pricing" name="scroll-link">Pricing</a>
         <a class="m-menu-item" href="./pages/right-sidebar-blog.html">Pages</a>
         <a href="./pages/sign-up.html" class="sign-up_white">
           <button class="btn btn_fill btn_dark">SIGN UP</button>
         </a>
       </nav>
 
-      <header class="page-header">
-        <a name="top"></a>
+      <header class="page-header" id="top">
+        <!-- <a name="top"></a> -->
 
         <section class="header-top">
           <div class="logo">
@@ -34,9 +34,9 @@
 
           <div class="menu-wrapper">
             <nav class='menu'>
-              <a href="#top" class="menu-item">Home</a>
-              <a href="#features" class="menu-item">Features</a>
-              <a href="#pricing" class="menu-item">Pricing</a>
+              <a href="#top" class="menu-item" name="scroll-link">Home</a>
+              <a href="#features" class="menu-item" name="scroll-link">Features</a>
+              <a href="#pricing" class="menu-item" name="scroll-link">Pricing</a>
               <a href="./pages/right-sidebar-blog.html" class="menu-item">Pages</a>
             </nav>
     
@@ -79,18 +79,18 @@
           </div>
         </div>
 
-        <div class="next-section-btn">
-          <a href="#next-section">
+        <a href="#features" name="scroll-link">
+          <div class="next-section-btn">
             <div class="arrow"></div>
             <div class="arrow-down"></div>
-          </a>
-        </div>
+          </div>
+        </a>
       </header>
 
       <main>
-        <section class="features">
-          <a name="features"></a>
-          <a name="next-section"></a>
+        <section class="features" id="features">
+          <!-- <a name="features"></a> -->
+          <!-- <a name="next-section"></a> -->
           <div class="content-align features-wrapper">
 
             <div class="feature-item">
@@ -211,8 +211,8 @@
           </div>
         </section>
 
-        <section class="pricing">
-          <a name="pricing"></a>
+        <section class="pricing" id="pricing">
+          <!-- <a name="pricing"></a> -->
           <div class="content-align pricing-wrapper">
             
             <div class="pricing-plan">
@@ -495,7 +495,7 @@
       </footer>
 
       <div class="scroll">
-        <a href="#top">
+        <a href="#top" name="scroll-link">
           <div class="scroll__arrow"></div>
             <div class="scroll__arrow_top"></div>
         </a>
@@ -503,6 +503,8 @@
 
     </div>
 
+    <script src="./scripts/smooth-scroll.js"></script>
     <script src="./scripts/m-menu.js"></script>
+    
   </body>
 </html>
