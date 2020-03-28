@@ -350,7 +350,7 @@ a:active {
   color: #0f7bff;
 }
 .header-top .menu-item:hover {
-  border-bottom: 2px solid #0f7bff;
+  color: #0f7bff;
 }
 .header-top .menu-item:active {
   color: #0f7bff;
