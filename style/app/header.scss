@@ -100,57 +100,7 @@ a {
   }
 }
 
-.sub-header {
-  box-sizing: border-box;
-  width: 100%;
-  height: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 4rem;
-  background-color: $bgcolor-1;
-  border-top: 1px solid $text-color;
 
-  &-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1.5rem;
-  }
-
-  &-title {
-    height: 12rem;
-    color: $header-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    &__preview {
-      font-size: 1.8rem;
-      font-weight: 600;
-      line-height: 2.7rem;
-      margin-top: -0.7rem;
-    }
-
-    &__head {
-      font-size: 4.2rem;
-      font-weight: 700;
-      line-height: 2.4rem;
-      text-transform: uppercase;
-    }
-
-    &__page {
-      font-size: 1.6rem;
-      font-weight: 600;
-      line-height: 2.7rem;
-    }
-  }
-
-  &__img {
-    width: 42.7rem;
-    height: 32.8rem;
-  }
-}
 
 .m-menu {
 	position: fixed;
@@ -251,9 +201,6 @@ a {
   }
 }
 
-@media only screen and  (max-width: 1520px) {
-}
-
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 7px;
@@ -280,37 +227,6 @@ a {
   }
 }
 
-@media only screen and (max-device-width : 700px) {
-
-  .sub-header {
-    height: 100%;
-    padding: 5rem 4rem;
-    &-wrapper {
-      flex-direction: column;
-    }
-
-    &__img {
-      margin-top: 4rem;
-    }
-    
-  }
-}
 
 
-@media only screen and (max-width: 380px) {
-  .sub-header {
-    
-    &-title {
-      text-align: center;
 
-      &__head {
-        line-height: 4.4rem;
-      }
-    }
-
-    &__img {
-      width: 25rem;
-      height: auto;
-    }
-  }
-}
