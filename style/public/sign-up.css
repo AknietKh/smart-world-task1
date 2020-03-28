@@ -482,7 +482,12 @@ html {
   font-size: 8px;
 }
 
+body {
+  min-height: 100vh;
+}
+
 .page-content {
+  min-height: 100vh;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -496,6 +501,7 @@ html {
 }
 
 main {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -610,31 +616,14 @@ main {
   html {
     font-size: 7px;
   }
-
-  body {
-    height: 100vh;
-  }
-
-  main {
-    height: 52.5vh;
-  }
 }
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 6px;
   }
 
-  main {
-    height: 60vh;
-  }
-
   .scroll {
-    bottom: 6%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  main {
-    height: 53vh;
+    bottom: 14rem;
   }
 }
 

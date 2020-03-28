@@ -3,6 +3,17 @@
 @import "btn.scss";
 @import "sign-up.scss";
 
+html {
+  font-size: 8px;
+}
+
+body {
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
 .login-form {
   &__links {
     display: flex;
@@ -25,57 +36,13 @@
   }
 }
 
-
-@media only screen and (max-width: 1920px) {
-  body {
-    height: 100vh;
-  }
-
-  main {
-    // height: 60.5vh;
-    height: 45.5vh;
-  }
-}
-
 @media only screen and (min-width: 2560px) {
   html {
     font-size: 13.3px;
   }
 }
-
 @media only screen and (max-width: 1280px) {
-  html {
-    font-size: 7px;
-  }
-
-  body {
-    height: 100vh;
-  }
-
-  main {
-    // height: 60.5vh;
-    height: 52.5vh;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 6px;
-  }
-  
-  main {
-    height: 60vh;
-  }
-
   .scroll {
-    bottom: 6%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  
-  main {
-    // height: 60vh;
-    height: 54vh;
+    bottom: 14rem;
   }
 }
