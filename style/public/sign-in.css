@@ -474,6 +474,10 @@ a:active {
   opacity: 0.5;
 }
 
+:active, :hover, :focus {
+  outline: none;
+}
+
 .content-wrapper {
   max-width: 112.6rem;
   width: 100%;
@@ -948,6 +952,10 @@ a:active {
 }
 .btn:active {
   opacity: 0.5;
+}
+
+:active, :hover, :focus {
+  outline: none;
 }
 
 html {

@@ -33,4 +33,8 @@
   opacity: 0.5;
 }
 
+:active, :hover, :focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=btn.css.map */
